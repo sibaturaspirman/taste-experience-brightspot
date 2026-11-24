@@ -9,6 +9,7 @@
 > - Pengaturan admin disimpan di key localStorage sendiri (`te_kiosk_brightspot_v1`), jadi tidak bentrok dengan
 >   versi biasa di perangkat yang sama.
 > - Dropdown admin mengambil daftar dari `Object.keys(RESULTS)`. `#fresh` dan `?result=fresh` jatuh ke layar start.
+- **PWA:** `manifest.webmanifest`, `sw.js`, `icons/` — sama pola hybrid; `node patch-pwa.js` untuk link di `index.html`. Cache name `te-brightspot-v1`; naikkan saat deploy baru.
 - **QR via upload API** (selaras `../taste-experience-hybrid/`): `prepareQR()` → `composeResult()` → upload → QR = URL `file`. Layout QR pakai CSS vars `--qr-*`; tombol `#qrDl`; `uploadApiName()` + `taste-exp-{bold|creamy}.jpg`. Default endpoint **mizuho** (hybrid pakai taufest). HP: `noGlitch` / kelas `html.no-glitch` (bukan glitch canvas/video). Script: `patch-sync-with-hybrid.js`.
 > - Dev server: `taste-kiosk-brightspot` di `../.claude/launch.json`, port 5602.
 > - Revisi di versi biasa **tidak otomatis ikut ke sini**. Kalau ada revisi desain atau copy, terapkan di kedua folder.

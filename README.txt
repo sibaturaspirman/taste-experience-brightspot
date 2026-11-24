@@ -6,7 +6,12 @@ VERSI BRIGHTSPOT: hanya 2 hasil, yaitu BOLD dan CREAMY (tidak ada FRESH).
 ISI FOLDER
 - index.html   : aplikasinya (gambar, font, dan 2 video hasil sudah tertanam di dalamnya)
 - lib/qrcode.js: library pembuat kode QR (supaya QR tetap jalan tanpa internet)
+- manifest.webmanifest, sw.js, icons/: PWA (bisa install di HP / Add to Home Screen; cache shell offline)
 - video/       : 2 video background hasil (bold, creamy) sebagai arsip
+
+PWA (opsional, untuk hosting HTTPS)
+- Service worker hanya aktif lewat http(s)://, bukan file://. Deploy seluruh folder ke satu origin.
+- Setelah update file di server, naikkan versi CACHE di sw.js (mis. te-brightspot-v2) supaya booth dapat versi baru.
 
 CARA PAKAI DI TV
 1. Salin seluruh folder ini ke TV / mini-PC / USB. Jangan pisahkan index.html dari folder lib.
