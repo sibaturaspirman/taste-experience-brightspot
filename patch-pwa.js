@@ -14,10 +14,10 @@ rep(
   `<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#021a5c">
-<meta name="application-name" content="Taste Exp Brightspot">
+<meta name="application-name" content="Tase Exp Brghtspt">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Taste Exp">
+<meta name="apple-mobile-web-app-title" content="Tase Exp Brghtspt">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
 <title>Taste Experience – Brightspot</title>`,
   "pwa head"
